@@ -1,0 +1,96 @@
+.dashboard {
+  padding: 20px;
+  color: #0f172a;
+}
+
+.dashboard.dark {
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+/* TOPO */
+.dashboard-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* ADIÇÕES */
+  gap: 24px;              /* espaço entre título e ações */
+  margin-bottom: 28px;   /* espaço abaixo do topo */
+}
+
+
+.acoes {
+  display: flex;
+  gap: 8px;
+}
+
+.acoes input,
+.acoes button {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #cbd5f5;
+  cursor: pointer;
+}
+
+/* KPIs */
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.kpi-card {
+  background: white;
+  border-radius: 14px;
+  padding: 18px;
+
+  /* ADIÇÕES IMPORTANTES */
+  display: flex;
+  flex-direction: column;
+  gap: 6px; /* espaço entre ícone, título e valor */
+}
+
+
+.dashboard.dark .kpi-card {
+  background: #1e293b;
+}
+
+.kpi-card.destaque {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+
+  gap: 8px; /* mais espaço interno */
+}
+
+
+/* GRÁFICOS */
+.graficos-lado {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.grafico-card {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.dashboard.dark .grafico-card {
+  background: #1e293b;
+}
+.kpi-card span {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.kpi-card strong {
+  font-size: 18px;
+}
+
+.kpi-card small {
+  font-size: 13px;
+  opacity: 0.7;
+}

@@ -1,0 +1,127 @@
+.movimentacao-container {
+  padding: 20px;
+}
+
+.movimentacao-container h1 {
+  margin-bottom: 20px;
+}
+
+.movimentacao-form {
+  background: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  display: grid;
+  gap: 12px;
+}
+
+.movimentacao-form select,
+.movimentacao-form input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.movimentacao-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.movimentacao-form button.cancelar {
+  background: #9ca3af;
+}
+
+.movimentacao-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.movimentacao-table th,
+.movimentacao-table td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.status-ativa {
+  color: green;
+  font-weight: bold;
+}
+
+.status-encerrada {
+  color: red;
+  font-weight: bold;
+}
+
+.acoes button {
+  margin-right: 6px;
+}
+/* Base dos botões */
+.btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-right: 6px;
+}
+
+/* ENCERRAR */
+.btn-encerrar {
+  background-color: #2563eb; /* azul */
+  color: #fff;
+}
+
+.btn-encerrar:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+/* EDITAR */
+.btn-editar {
+  background-color: #f59e0b; /* amarelo */
+  color: #fff;
+}
+
+.btn-editar:hover {
+  background-color: #d97706;
+  transform: translateY(-1px);
+}
+
+/* EXCLUIR */
+.btn-excluir {
+  background-color: #dc2626; /* vermelho */
+  color: #fff;
+}
+
+.btn-excluir:hover {
+  background-color: #b91c1c;
+  transform: translateY(-1px);
+}
+
+/* Efeito ao clicar */
+.btn:active {
+  transform: scale(0.96);
+}
+.list-header {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* 👈 espaço ENTRE voltar, busca e botão */
+  margin-bottom: 16px;
+}
+
+.search-input {
+  flex: 1;
+  max-width: 320px;
+}
+.table td:last-child {
+  display: flex;
+  gap: 8px; /* 👈 espaço entre os botões */
+  flex-wrap: wrap;
+}
